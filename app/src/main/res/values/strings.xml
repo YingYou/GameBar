@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GameBar</string>
+    <string name="action_settings">Settings</string>
+    <string name="lorem_ipsum_short">一款经典射击类游戏</string>
+    <string name="lorem_ipsum_long">海上大作战是一操作简单的横板射击游戏在战斗中，玩家不仅需要预先发射炸弹消灭不怀好意的潜艇，同时必须躲过各种来自海面以下的攻击，通过不断的消灭敌人，创造记录. </string>
+
+    <string-array name="array_names">
+        <item>"海上大作战"</item>
+
+    </string-array>
+</resources>
