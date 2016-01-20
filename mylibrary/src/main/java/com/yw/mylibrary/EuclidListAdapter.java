@@ -22,6 +22,7 @@ public class EuclidListAdapter extends ArrayAdapter<Map<String, Object>> {
     public static final String KEY_NAME = "name";
     public static final String KEY_DESCRIPTION_SHORT = "description_short";
     public static final String KEY_DESCRIPTION_FULL = "description_full";
+    public static final String KEY_URL = "url";
 
     private final LayoutInflater mInflater;
     private List<Map<String, Object>> mData;

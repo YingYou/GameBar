@@ -1,6 +1,5 @@
 package com.yw.gamebar;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Window;
@@ -34,18 +33,18 @@ public class GameWebActivity extends FragmentActivity{
     }
 
 
-    @SuppressLint("SetJavaScriptEnabled")
+//    @SuppressLint("SetJavaScriptEnabled")
     private void initDatas() {
 
         WebSettings webSettings = play_web.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);//
+//        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);//
+//
+//        webSettings.setSupportZoom(true);
+//        webSettings.setBuiltInZoomControls(true);
+//        webSettings.setUseWideViewPort(true);//
 
-        webSettings.setSupportZoom(true);
-        webSettings.setBuiltInZoomControls(true);
-        webSettings.setUseWideViewPort(true);//
-
-        play_web.setInitialScale(10);//
+//        play_web.setInitialScale(10);//
         play_web.loadUrl(play_url);
 
     }

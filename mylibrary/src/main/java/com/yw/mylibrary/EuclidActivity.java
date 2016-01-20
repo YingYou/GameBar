@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.graphics.RectF;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +34,6 @@ import java.util.Map;
 
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
-
 /**
  * Created by Oleksii Shliama on 1/27/15.
  */
@@ -55,6 +55,8 @@ public abstract class EuclidActivity extends Activity {
     protected TextView mTextViewProfileName;
     protected TextView mTextViewProfileDescription;
     protected View mButtonProfile;
+    public String URLProfile;
+
 
     public static ShapeDrawable sOverlayShape;
     static int sScreenWidth;
@@ -71,6 +73,7 @@ public abstract class EuclidActivity extends Activity {
     private AnimatorSet mOpenProfileAnimatorSet;
     private AnimatorSet mCloseProfileAnimatorSet;
     private Animation mProfileButtonShowAnimation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +107,7 @@ public abstract class EuclidActivity extends Activity {
         sOverlayShape = buildAvatarCircleOverlay();
 
         initList();
+
     }
 
     private void initList() {
@@ -185,6 +189,7 @@ public abstract class EuclidActivity extends Activity {
     private void setProfileDetailsInfo(Map<String, Object> item) {
         mTextViewProfileName.setText((String) item.get(EuclidListAdapter.KEY_NAME));
         mTextViewProfileDescription.setText((String) item.get(EuclidListAdapter.KEY_DESCRIPTION_FULL));
+        URLProfile = (String) item.get(EuclidListAdapter.KEY_URL);
     }
 
     /**

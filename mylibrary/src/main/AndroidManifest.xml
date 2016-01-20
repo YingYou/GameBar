@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yw.mylibrary">
+    package="com.yw.mylibrary"
+  >
 
     <application
         android:allowBackup="true"
